@@ -2,12 +2,18 @@ package application;
 
 import boardgame.Board;
 import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
 
     public static void main(String[] args) {
 
-        Board board = new Board(8, 8 );
+        ChessMatch chessMatch = new ChessMatch();
+
+        //função para imprimir as peças da partida
+
+        //classe UI e dentro dela o método printBoard
+        UI.printBoard(chessMatch.getPieces());
     }
 
 }
