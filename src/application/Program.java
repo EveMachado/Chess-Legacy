@@ -12,7 +12,7 @@ public class Program {
 
         //função para imprimir as peças da partida
 
-        //classe UI e dentro dela o método printBoard
+        //classe User Interface e dentro dela o método printBoard
         UI.printBoard(chessMatch.getPieces());
     }
 
