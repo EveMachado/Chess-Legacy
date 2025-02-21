@@ -52,6 +52,9 @@ public class ChessMatch {
         if(!board.theseIsAPiece(position)){
             throw new ChessException("Não há nenhuma peça na posição de origem");
         }
+        if(!board.piece(position).isThereAnyPossibleMove()){
+            throw new ChessException("Não existe movimentos possiveis para a peça escolhida");
+        }
     }
 
     //operação de colocar peças passando a posição nas coordenadas do xadrez
